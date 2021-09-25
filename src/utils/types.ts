@@ -7,7 +7,10 @@ export interface LocaleItem {
     format(matches: Matches): string;
 }
 
-export type Locale = Array<LocaleItem>;
+export interface Locale {
+    common: Array<LocaleItem>;
+    custom?: LocaleItem;
+}
 
 export interface LocaleDictionary {
  [key: string]: Locale;

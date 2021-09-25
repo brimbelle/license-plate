@@ -10,7 +10,7 @@
   "scripts": {
     "build": "ttsc",
     "dev": "ttsc -w",
-    "test": "jest"
+    "test": "clear && jest"
   },
   "repository": {
     "type": "git",
