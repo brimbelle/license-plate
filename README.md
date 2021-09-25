@@ -1,8 +1,9 @@
 # world-license-plate
 
-![size logo](https://img.shields.io/github/languages/code-size/brimbelle/world-license-plate)
-![last logo](https://img.shields.io/github/last-commit/brimbelle/world-license-plate)
-![license logo](https://img.shields.io/github/license/brimbelle/world-license-plate)
+![size logo](https://img.shields.io/github/languages/code-size/brimbelle/world-license-plate?style=flat-square)
+![last logo](https://img.shields.io/github/last-commit/brimbelle/world-license-plate?style=flat-square)
+![license logo](https://img.shields.io/github/license/brimbelle/world-license-plate?style=flat-square)
+![license logo](https://img.shields.io/github/package-json/v/brimbelle/world-license-plate?style=flat-square)
 
 Simple package to validate or format world license plate
 
