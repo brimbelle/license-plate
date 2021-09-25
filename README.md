@@ -16,11 +16,11 @@ yarn add
 ## Docs
 
 ```bash
-isValidLicensePlate(licensePlate: string, countryCode: CountryCode): boolean
+isValidLicensePlate(licensePlate: string, countryCode: CountryCode, isCustomPlate?: boolean): boolean
 ```
 
 ```bash
-formatLicensePlate(licensePlate: string, countryCode: CountryCode): string 
+formatLicensePlate(licensePlate: string, countryCode: CountryCode, isCustomPlate?: boolean): string 
 ```
 
 ## License
