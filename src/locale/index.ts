@@ -1,9 +1,5 @@
-import fr from './fr';
-import {CountryCode, Locale, LocaleDictionary} from "../utils/types";
-
-const localeDictionary: LocaleDictionary = {
-    fr,
-}
+import {CountryCode, Locale} from "../utils/types";
+import localeDictionary from './localeDictionary';
 
 export function getLocale(countryCode: CountryCode): Locale | any {
     const locale = localeDictionary[countryCode.toLowerCase()];

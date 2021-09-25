@@ -2,7 +2,7 @@ import {CountryCode, LocaleItem} from "./utils/types";
 import {getLocale} from "./locale";
 import {clearSpecialChar} from "./utils/parser";
 
-function isValidLicensePlate(licensePlate: string, countryCode: CountryCode): boolean {
+export function isValidLicensePlate(licensePlate: string, countryCode: CountryCode): boolean {
     const locale = getLocale(countryCode);
 
     const clearedLicensePlate = clearSpecialChar(licensePlate);
