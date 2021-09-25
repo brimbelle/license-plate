@@ -16,6 +16,11 @@ yarn add
 ## Docs
 
 ```bash
+isValidLicensePlate(licensePlate: string, countryCode: CountryCode): boolean
+```
+
+```bash
+formatLicensePlate(licensePlate: string, countryCode: CountryCode): string 
 ```
 
 ## License
