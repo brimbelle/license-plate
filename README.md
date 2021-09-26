@@ -1,4 +1,4 @@
-# world-license-plate
+# license-plate
 
 ![size logo](https://img.shields.io/github/languages/code-size/brimbelle/world-license-plate?style=flat-square)
 ![last logo](https://img.shields.io/github/last-commit/brimbelle/world-license-plate?style=flat-square)
