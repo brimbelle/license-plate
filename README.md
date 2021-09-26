@@ -10,8 +10,8 @@ Simple package to validate or format world license plate
 ## Installation
 
 ```bash
-yarn add world-license-plate
-# or npm install world-license-plate
+yarn add license-plate
+# or npm install license-plate
 ```
 
 ## Docs
