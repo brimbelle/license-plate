@@ -1,0 +1,53 @@
+import {formatLicensePlate, isValidLicensePlate} from "../index";
+
+test('M123456 should return true', () => expect(isValidLicensePlate('M123456', "CH")).toBe(true))
+test('AG12345 should return true', () => expect(isValidLicensePlate('AG12345', "CH")).toBe(true))
+test('AI1234 should return true', () => expect(isValidLicensePlate('AI1234', "CH")).toBe(true))
+test('AR123 should return true', () => expect(isValidLicensePlate('AR123', "CH")).toBe(true))
+test('BE12 should return true', () => expect(isValidLicensePlate('BE12', "CH")).toBe(true))
+test('BL1 should return true', () => expect(isValidLicensePlate('BL1', "CH")).toBe(true))
+test('BS123456 should return true', () => expect(isValidLicensePlate('BS123456', "CH")).toBe(true))
+test('FR123456 should return true', () => expect(isValidLicensePlate('FR123456', "CH")).toBe(true))
+test('GE123456 should return true', () => expect(isValidLicensePlate('GE123456', "CH")).toBe(true))
+test('GL123456 should return true', () => expect(isValidLicensePlate('GL123456', "CH")).toBe(true))
+test('GR123456 should return true', () => expect(isValidLicensePlate('GR123456', "CH")).toBe(true))
+test('JU123456 should return true', () => expect(isValidLicensePlate('JU123456', "CH")).toBe(true))
+test('LU123456 should return true', () => expect(isValidLicensePlate('LU123456', "CH")).toBe(true))
+test('NE123456 should return true', () => expect(isValidLicensePlate('NE123456', "CH")).toBe(true))
+test('NW123456 should return true', () => expect(isValidLicensePlate('NW123456', "CH")).toBe(true))
+test('OW123456 should return true', () => expect(isValidLicensePlate('OW123456', "CH")).toBe(true))
+test('SG123456 should return true', () => expect(isValidLicensePlate('SG123456', "CH")).toBe(true))
+test('SH123456 should return true', () => expect(isValidLicensePlate('SH123456', "CH")).toBe(true))
+test('SO123456 should return true', () => expect(isValidLicensePlate('SO123456', "CH")).toBe(true))
+test('SZ123456 should return true', () => expect(isValidLicensePlate('SZ123456', "CH")).toBe(true))
+test('TG123456 should return true', () => expect(isValidLicensePlate('TG123456', "CH")).toBe(true))
+test('TI123456 should return true', () => expect(isValidLicensePlate('TI123456', "CH")).toBe(true))
+test('UR123456 should return true', () => expect(isValidLicensePlate('UR123456', "CH")).toBe(true))
+test('VD123456 should return true', () => expect(isValidLicensePlate('VD123456', "CH")).toBe(true))
+test('VS123456 should return true', () => expect(isValidLicensePlate('VS123456', "CH")).toBe(true))
+test('ZG123456 should return true', () => expect(isValidLicensePlate('ZG123456', "CH")).toBe(true))
+test('ZH123456 should return true', () => expect(isValidLicensePlate('ZH123456', "CH")).toBe(true))
+// test('CDZH123456 should return true', () => expect(isValidLicensePlate('CDZH123456', "CH")).toBe(true))
+// test('CCZH123456 should return true', () => expect(isValidLicensePlate('CCZH123456', "CH")).toBe(true))
+// test('ATZH123456 should return true', () => expect(isValidLicensePlate('ATZH123456', "CH")).toBe(true))
+// test(' should return true', () => expect(isValidLicensePlate('', '')).toBe(true))
+
+// test(' should return false', () => expect(isValidLicensePlate('', '')).toBe(false))
+test('TP13456 should return false', () => expect(isValidLicensePlate('TP13456', "CH")).toBe(false))
+test('URAZ should return false', () => expect(isValidLicensePlate('URAZ', "CH")).toBe(false))
+test('VD1234567 should return false', () => expect(isValidLicensePlate('VD1234567', "CH")).toBe(false))
+test('VSQ123 should return false', () => expect(isValidLicensePlate('VSQ123', "CH")).toBe(false))
+test('VG12 should return false', () => expect(isValidLicensePlate('VG12', "CH")).toBe(false))
+test('ZJ1 should return false', () => expect(isValidLicensePlate('ZJ1', "CH")).toBe(false))
+// test('CFZH123456 should return true', () => expect(isValidLicensePlate('CFZH123456', "CH")).toBe(false))
+
+// test(' should return ', () => expect(formatLicensePlate('', '')).toBe(''));
+test('UR123456 should return ', () => expect(formatLicensePlate('UR123456', "CH")).toBe('UR 123456'));
+test('UR12345 should return ', () => expect(formatLicensePlate('UR12345', "CH")).toBe('UR 12345'));
+test('UR1234 should return ', () => expect(formatLicensePlate('UR1234', "CH")).toBe('UR 1234'));
+test('UR123 should return ', () => expect(formatLicensePlate('UR123', "CH")).toBe('UR 123'));
+test('UR12 should return ', () => expect(formatLicensePlate('UR12', "CH")).toBe('UR 12'));
+test('UR1 should return ', () => expect(formatLicensePlate('UR1', "CH")).toBe('UR 1'));
+// test('CDZH123456 should return ', () => expect(formatLicensePlate('CDZH123456', "CH")).toBe('CD ZH 123 456'));
+// test('CCZH123456 should return ', () => expect(formatLicensePlate('CCZH123456', "CH")).toBe('CC ZH 123 456'));
+// test('ATZH123456 should return ', () => expect(formatLicensePlate('ATZH123456', "CH")).toBe('AT ZH 123 456'));
