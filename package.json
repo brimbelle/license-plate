@@ -1,6 +1,6 @@
 {
   "name": "@brimbelle/world-license-plate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple package to validate or format world license plate",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
