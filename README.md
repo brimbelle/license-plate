@@ -10,18 +10,51 @@ Simple package to validate or format world license plate
 ## Installation
 
 ```bash
-yarn add license-plate
-# or npm install license-plate
+yarn add @brimbelle/license-plate
+# or npm install @brimbelle/license-plate
 ```
 
 ## Docs
 
-```bash
-isValidLicensePlate(licensePlate: string, countryCode: CountryCode, isCustomPlate?: boolean): boolean
-```
+It's just the beginning of this lib, new locales are coming in next weeks.
+
+If you need a locale not present, post an [issue](https://github.com/brimbelle/license-plate/issues) to ask me or create a pull request with this locale added.
+
+At moment you can use FR, BE, and CH locales to validate and format your licenses plates.
+
+Find example [HERE](https://github.com/brimbelle/license-plate/blob/develop/example/example.js)
 
 ```bash
-formatLicensePlate(licensePlate: string, countryCode: CountryCode, isCustomPlate?: boolean): string 
+import LicensePlate from '@brimbelle/license-plate';
+```
+
+LocaleCode
+```bash
+type LocaleCode: 'FR' | 'BE' | 'CH';
+```
+
+Set locale
+```bash
+LicensePlate.setLocale(locale: LocaleCode); // Default is FR locale
+
+LicensePlate.setLocale('FR');
+```
+
+Create license plate
+```bash
+new LicensePlate(licensePlate: string, isCustom?: boolean);
+
+const licensePlate = new LicensePlate('AB123CD');
+```
+
+Is valid license plate
+```bash
+licensePlate.isValid(): boolean;
+```
+
+Get formated license plate
+```bash
+licensePlate.format(): string;
 ```
 
 ## License

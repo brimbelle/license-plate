@@ -1,12 +1,14 @@
-import {CountryCode, Locale} from "../utils/types";
+import {Locale, LocaleCode} from "../utils/types";
 import localeDictionary from './localeDictionary';
 
-export function getLocale(countryCode: CountryCode): Locale | any {
-    const locale = localeDictionary[countryCode.toLowerCase()];
+export function getLocale(locale: LocaleCode): Locale {
+    const localeData = localeDictionary[locale.toLowerCase()]
 
-    if (!locale) {
-        throw new Error('Unknown Country Code');
+    if (localeData) {
+        return localeData;
     }
 
-    return locale;
+    return {
+        common: [],
+    };
 }

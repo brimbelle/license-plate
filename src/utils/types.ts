@@ -1,10 +1,10 @@
-export type CountryCode = 'FR' | 'BE' | 'CH' | 'CA';
+export type LocaleCode = 'FR' | 'BE' | 'CH' | 'CA';
 
 export type Matches = Array<string>;
 
 export interface LocaleItem {
     regex: RegExp,
-    format(matches: Matches): string;
+    format(matches: RegExpMatchArray | null): string;
 }
 
 export interface Locale {
