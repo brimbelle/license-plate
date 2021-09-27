@@ -18,44 +18,43 @@ yarn add @brimbelle/license-plate
 
 It's just the beginning of this lib, new locales are coming in next weeks.
 
-If you need a locale not present, post an issue to ask me or create a pull request with this locale added.
+If you need a locale not present, post an [issue](https://github.com/brimbelle/license-plate/issues) to ask me or create a pull request with this locale added.
 
-At moment you can use FR, BE, CH and CA locales to validate and format your licenses plates.
+At moment you can use FR, BE, and CH locales to validate and format your licenses plates.
+
+Find example [HERE](https://github.com/brimbelle/license-plate/blob/develop/example/example.js)
 
 ```bash
-import licensePlate from '@brimbelle/license-plate';
+import LicensePlate from '@brimbelle/license-plate';
 ```
 
-
-Types
+LocaleCode
 ```bash
-type countryCode: 'FR' | 'BE' | 'CH' | 'CA';
+type LocaleCode: 'FR' | 'BE' | 'CH';
 ```
 
 Set locale
 ```bash
-licensePlate.setLocale(
-  countryCode: CountryCode,
-): void;
+LicensePlate.setLocale(locale: LocaleCode); // Default is FR locale
+
+LicensePlate.setLocale('FR');
 ```
 
 Create license plate
 ```bash
-const lp = licensePlate(
-  licensePlate: string,
-  isCustomPlate?: boolean,
-  countryCode?: CountryCode,
-): LicensePlate;
+new LicensePlate(licensePlate: string, isCustom?: boolean);
+
+const licensePlate = new LicensePlate('AB123CD');
 ```
 
 Is valid license plate
 ```bash
-lp.isValid(): boolean;
+licensePlate.isValid(): boolean;
 ```
 
 Get formated license plate
 ```bash
-lp.getFormat(): string;
+licensePlate.format(): string;
 ```
 
 ## License
