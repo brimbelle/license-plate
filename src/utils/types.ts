@@ -1,4 +1,4 @@
-export type LocaleCode = 'FR' | 'BE' | 'CH';
+export type LocaleCode = 'FR' | 'BE' | 'CH' | 'CA-CB';
 
 export type Matches = Array<string>;
 
